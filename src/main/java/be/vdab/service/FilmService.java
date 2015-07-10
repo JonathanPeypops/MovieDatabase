@@ -48,7 +48,7 @@ public class FilmService {
         }
     }
 
-    @RequestMapping("cars")
+    @RequestMapping("films")
     public List<Film> findAll() {
         return filmRepository.findAll();
     }
