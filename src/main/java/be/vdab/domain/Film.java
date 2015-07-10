@@ -15,7 +15,7 @@ public class Film {
     private String title;
     private int length;
     private List<Character> characters;
-    private Director director;
+    private String director;
     private String summary;
     private ByteArray coverimg;
     private Genre genre;
