@@ -12,4 +12,8 @@ public class FilmController {
     @Autowired
     private FilmRepository filmRepository;
 
+    @RequestMapping("film.html")
+    public Film film(@RequestParam("id") int id) {
+        return filmRepository.findOne(id);
+    }
 }
