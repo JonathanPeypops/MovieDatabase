@@ -1,10 +1,6 @@
 package be.vdab.domain;
 
-import com.sun.tools.javac.util.List;
-import javassist.bytecode.ByteArray;
-
 import javax.persistence.*;
-import java.net.URL;
 
 
 @Entity
@@ -13,21 +9,22 @@ public class Film {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String title;
-    private int length;
-    private List<Character> characters;
+    private int filmlength
+            ;
+//    private List<Character> characters;
     private String director;
-    private String summary;
-    private ByteArray coverimg;
+//    private String summary;
+//    private ByteArray coverimg;
     private Genre genre;
-    private double rating;
-    private URL trailer;
+//    private double rating;
+//    private URL trailer;
 
     public Film() {
     }
 
-    public Film(String title, int length, String director, Genre genre) {
+    public Film(String title, int filmlength, String director, Genre genre) {
         this.title = title;
-        this.length = length;
+        this.filmlength = filmlength;
         this.director = director;
         this.genre = genre;
     }
@@ -48,21 +45,21 @@ public class Film {
         this.title = title;
     }
 
-    public int getLength() {
-        return length;
+    public int getFilmlength() {
+        return filmlength;
     }
 
-    public void setLength(int length) {
-        this.length = length;
+    public void setFilmlength(int filmlength) {
+        this.filmlength = filmlength;
     }
 
-    public List<Character> getCharacters() {
-        return characters;
-    }
-
-    public void setCharacters(List<Character> characters) {
-        this.characters = characters;
-    }
+//    public List<Character> getCharacters() {
+//        return characters;
+//    }
+//
+//    public void setCharacters(List<Character> characters) {
+//        this.characters = characters;
+//    }
 
     public String getDirector() {
         return director;
@@ -72,21 +69,21 @@ public class Film {
         this.director = director;
     }
 
-    public String getSummary() {
-        return summary;
-    }
-
-    public void setSummary(String summary) {
-        this.summary = summary;
-    }
-
-    public ByteArray getCoverimg() {
-        return coverimg;
-    }
-
-    public void setCoverimg(ByteArray coverimg) {
-        this.coverimg = coverimg;
-    }
+//    public String getSummary() {
+//        return summary;
+//    }
+//
+//    public void setSummary(String summary) {
+//        this.summary = summary;
+//    }
+//
+//    public ByteArray getCoverimg() {
+//        return coverimg;
+//    }
+//
+//    public void setCoverimg(ByteArray coverimg) {
+//        this.coverimg = coverimg;
+//    }
 
     public Genre getGenre() {
         return genre;
@@ -96,19 +93,19 @@ public class Film {
         this.genre = genre;
     }
 
-    public double getRating() {
-        return rating;
-    }
-
-    public void setRating(double rating) {
-        this.rating = rating;
-    }
-
-    public URL getTrailer() {
-        return trailer;
-    }
-
-    public void setTrailer(URL trailer) {
-        this.trailer = trailer;
-    }
+//    public double getRating() {
+//        return rating;
+//    }
+//
+//    public void setRating(double rating) {
+//        this.rating = rating;
+//    }
+//
+//    public URL getTrailer() {
+//        return trailer;
+//    }
+//
+//    public void setTrailer(URL trailer) {
+//        this.trailer = trailer;
+//    }
 }
