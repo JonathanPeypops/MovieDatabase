@@ -13,7 +13,7 @@ public class HomeController {
     private FilmRepository filmRepository;
 
     @RequestMapping("/")
-    public String home(Map<String, Object> model) {
+    public String films(Map<String, Object> model) {
         model.put("films", filmRepository.findAll());
         return "home";
     }

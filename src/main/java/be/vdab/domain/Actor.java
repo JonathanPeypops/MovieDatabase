@@ -2,12 +2,8 @@ package be.vdab.domain;
 
 import javassist.bytecode.ByteArray;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.util.Date;
-
-import javax.persistence.Entity;
 
 @Entity
 public class Actor {
@@ -19,6 +15,7 @@ public class Actor {
 
     private String bio;
 //    private Date birthdate;
+    @Enumerated(EnumType.STRING)
     private Gender gender;
 //    private ByteArray actorimg;
 

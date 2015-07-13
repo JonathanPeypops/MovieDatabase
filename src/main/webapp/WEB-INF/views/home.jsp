@@ -10,20 +10,25 @@
 <body>
 <h1>Movies</h1>
 
-<table border="2">
-    <tr>
-        <th>ID</th>
-        <th>Title</th>
-    </tr>
-
-    <c:forEach var="films" items="${films}">
-
+<div class="container">
+    <table border="2">
         <tr>
-            <td> ${films.id} </td>
-            <td><a href="film/${films.id}">${films.title}</a></td>
+            <th class="label label-success col-md-3">ID</th>
+            <th class="label label-primary col-md-6">Title</th>
+            <th class="label label-warning col-md-3">Director</th>
         </tr>
 
-    </c:forEach>
-</table>
+        <c:forEach var="films" items="${films}">
+
+            <tr>
+                <td class="col-md-3"> ${films.id} </td>
+                <td class="col-md-6"><a href="films/details?id=${films.id}">${films.title}</a></td>
+                <td class="col-md-3"> ${films.director} </td>
+            </tr>
+
+        </c:forEach>
+    </table>
+    <a href="films/form"><button class="btn btn-success">Add film</button></a>
+</div>
 </body>
 </html>
