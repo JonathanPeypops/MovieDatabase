@@ -8,13 +8,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import java.util.Map;
+
 @Controller
 public class FilmController {
     @Autowired
     private FilmRepository filmRepository;
 
-    @RequestMapping(value = "film.html", method = RequestMethod.GET)
+    @RequestMapping(value = "film.html")
     public Film film(@RequestParam("id") int id) {
         return filmRepository.findOne(id);
     }
+
 }

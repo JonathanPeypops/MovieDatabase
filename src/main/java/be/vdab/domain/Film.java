@@ -9,8 +9,7 @@ public class Film {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String title;
-    private int filmlength
-            ;
+    private int filmlength;
 //    private List<Character> characters;
     private String director;
 //    private String summary;
