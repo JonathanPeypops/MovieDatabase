@@ -1,5 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <html>
 <head>
     <title>Home</title>
@@ -22,8 +23,9 @@
 
             <tr>
                 <td class="col-md-3"> ${films.id} </td>
-                <td class="col-md-6"><a href="films/details?id=${films.id}">${films.title}</a></td>
+                <td class="col-md-4"><a href="films/details?id=${films.id}">${films.title}</a></td>
                 <td class="col-md-3"> ${films.director} </td>
+                <td><form:form method="DELETE" class="button button-danger col-md-2" action="/films/${film.id}"><input type="submit" value="delete"></form:form></td>
             </tr>
 
         </c:forEach>
