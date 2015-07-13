@@ -18,9 +18,9 @@ public class Actor {
     private String lastname;
 
     private String bio;
-    private Date birthdate;
+//    private Date birthdate;
     private Gender gender;
-    private ByteArray actorimg;
+//    private ByteArray actorimg;
 
     public Actor() {
     }
@@ -63,13 +63,13 @@ public class Actor {
         this.bio = bio;
     }
 
-    public Date getBirthdate() {
-        return birthdate;
-    }
-
-    public void setBirthdate(Date birthdate) {
-        this.birthdate = birthdate;
-    }
+//    public Date getBirthdate() {
+//        return birthdate;
+//    }
+//
+//    public void setBirthdate(Date birthdate) {
+//        this.birthdate = birthdate;
+//    }
 
     public Gender getGender() {
         return gender;
@@ -79,11 +79,11 @@ public class Actor {
         this.gender = gender;
     }
 
-    public ByteArray getActorimg() {
-        return actorimg;
-    }
-
-    public void setActorimg(ByteArray actorimg) {
-        this.actorimg = actorimg;
-    }
+//    public ByteArray getActorimg() {
+//        return actorimg;
+//    }
+//
+//    public void setActorimg(ByteArray actorimg) {
+//        this.actorimg = actorimg;
+//    }
 }

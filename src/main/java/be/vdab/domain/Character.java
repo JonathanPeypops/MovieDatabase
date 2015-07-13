@@ -14,15 +14,15 @@ public class Character {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String name;
-    private Actor actor;
-    private ByteArray charimg;
+//    private Actor actor;
+//    private ByteArray charimg;
 
     public Character() {
     }
 
-    public Character(String name, Actor actor) {
+    public Character(String name /** ,Actor actor*/) {
         this.name = name;
-        this.actor = actor;
+//        this.actor = actor;
     }
 
     public Integer getId() {
@@ -41,19 +41,19 @@ public class Character {
         this.name = name;
     }
 
-    public Actor getActor() {
-        return actor;
-    }
-
-    public void setActor(Actor actor) {
-        this.actor = actor;
-    }
-
-    public ByteArray getCharimg() {
-        return charimg;
-    }
-
-    public void setCharimg(ByteArray charimg) {
-        this.charimg = charimg;
-    }
+//    public Actor getActor() {
+//        return actor;
+//    }
+//
+//    public void setActor(Actor actor) {
+//        this.actor = actor;
+//    }
+//
+//    public ByteArray getCharimg() {
+//        return charimg;
+//    }
+//
+//    public void setCharimg(ByteArray charimg) {
+//        this.charimg = charimg;
+//    }
 }

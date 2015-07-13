@@ -1,9 +1,15 @@
 package be.vdab.domain;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
 @Entity
 public class Review {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
     private String reviewername;
     private String description;
     private double rating;
@@ -11,7 +17,8 @@ public class Review {
     public Review() {
     }
 
-    public Review(String reviewername, String description) {
+    public Review(Integer id,String reviewername, String description) {
+        this.id = id;
         this.reviewername = reviewername;
         this.description = description;
     }
@@ -38,5 +45,13 @@ public class Review {
 
     public void setRating(double rating) {
         this.rating = rating;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 }

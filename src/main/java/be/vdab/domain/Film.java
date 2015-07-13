@@ -15,6 +15,7 @@ public class Film {
     private String director;
 //    private String summary;
 //    private ByteArray coverimg;
+    @Enumerated(EnumType.STRING)
     private Genre genre;
 //    private double rating;
 //    private URL trailer;

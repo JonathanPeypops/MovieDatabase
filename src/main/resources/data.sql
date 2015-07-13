@@ -1,0 +1,1 @@
+INSERT INTO film(id, title, filmlength, director, genre) VALUES (1, 'Harry Potter', 98, 'Lars', 'SCIFI');
