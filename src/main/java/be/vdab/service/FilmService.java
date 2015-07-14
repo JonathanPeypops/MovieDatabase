@@ -31,10 +31,11 @@ public class FilmService {
         return new ResponseEntity<Void>(headers, HttpStatus.CREATED);
     }
 
-    @RequestMapping(value = "film/{filmId}", method = DELETE)
-    public void removeById(@PathVariable("filmId") int id) {
-        filmRepository.delete(id);
-    }
+//    @RequestMapping(value = "film/delete/{filmId}", method = GET) //TODO: fix delete method
+//    public String removeById(@PathVariable("filmId") int id) {
+//        filmRepository.delete(id);
+//        return "redirect:/";
+//    }
 
     @RequestMapping(value = "film/{filmId}", method = GET)
     public ResponseEntity<Film> findById(@PathVariable("filmId") int id) {

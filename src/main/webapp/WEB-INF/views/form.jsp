@@ -13,6 +13,7 @@
 <body>
 <div class="container">
     <sf:form commandName="film" action="/create" method="post">
+        <sf:hidden path="id"/>
         <div class="form-group">
             <label for="title">Title</label>
             <sf:input path="title" class="form-control"/>

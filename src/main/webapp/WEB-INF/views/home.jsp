@@ -25,7 +25,8 @@
                 <td class="col-md-3"> ${films.id} </td>
                 <td class="col-md-4"><a href="films/details?id=${films.id}">${films.title}</a></td>
                 <td class="col-md-3"> ${films.director} </td>
-                <td><form:form method="DELETE" class="button button-danger col-md-2" action="/films/${film.id}"><input type="submit" value="delete"></form:form></td>
+                <td><a class="btn btn-danger" href="film/delete/${films.id}">delete </a> </td>
+                <td><a class="btn btn-success" href="films/form?id=${films.id}">edit </a> </td>
             </tr>
 
         </c:forEach>
