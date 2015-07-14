@@ -12,25 +12,37 @@
 </head>
 <body>
 <div class="container">
-    <sf:form commandName="film" action="/create" method="post">
+    <sf:form commandName="film" action="/create" method="post" cssClass="form-horizontal">
         <sf:hidden path="id"/>
-        <div class="form-control">
-            <label for="title" class="col-md-2">Title</label>
-            <sf:input path="title" class="col-md-10"/>
-        </div>
-        <div class="row">
-            <label for="title" class="col-md-1 col-md-1-left">Director</label>
-            <sf:input path="director" class="col-md-10"/>
+         <div class="form-group">
+            <label for="title" class="col-sm-2 control-label">Title</label>
+             <div class="col-sm-10">
+                <sf:input path="title" class="form-control"/>
+             </div>
         </div>
         <div class="form-group">
-            <label for="title" class="col-md-2">Genre</label>
-            <sf:input path="genre" class="form-control col-md-10"/>
+            <label for="title" class="col-sm-2 control-label">Director</label>
+            <div class="col-sm-10">
+                <sf:input path="director"  class="form-control"/>
+            </div>
         </div>
         <div class="form-group">
-            <label for="title" class="col-md-2">Length</label>
-            <sf:input path="filmlength" class="form-group col-md-10"/>
+            <label for="title" class="col-sm-2 control-label">Genre</label>
+            <div class="col-sm-10">
+                <sf:input path="genre" class="form-control"/>
+            </div>
         </div>
-        <button type="submit" class="btn btn-danger">SAVE</button>
+        <div class="form-group">
+            <label for="title" class="col-sm-2 control-label">Length</label>
+            <div class="col-sm-10">
+                <sf:input path="filmlength" class="form-control"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-danger">SAVE</button>
+            </div>
+        </div>
     </sf:form>
 </div>
 </body>
