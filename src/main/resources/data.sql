@@ -4,3 +4,4 @@ INSERT INTO film(id, title, filmlength, director, genre) VALUES (3, 'The Purge',
 INSERT INTO actor (id, bio, firstname, gender, lastname) VALUES (1, 'He is just awesome', 'Tony', 'MALE', 'Stark');
 INSERT INTO actor (id, bio, firstname, gender, lastname) VALUES (2, 'nah', 'This', 'FEMALE', 'Girl');
 INSERT INTO actor (id, bio, firstname, gender, lastname) VALUES (3, 'You shall not pass', 'Gandalf', 'MALE', 'The Grey');
+UPDATE film SET trailer='https://www.youtube.com/watch?v=L8-e_VdwAME' WHERE id=1;

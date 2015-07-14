@@ -18,16 +18,17 @@ public class Film {
     @Enumerated(EnumType.STRING)
     private Genre genre;
 //    private double rating;
-//    private URL trailer;
+    private String trailer;
 
     public Film() {
     }
 
-    public Film(String title, int filmlength, String director, Genre genre) {
+    public Film(String title, int filmlength, String director, Genre genre, String trailer) {
         this.title = title;
         this.filmlength = filmlength;
         this.director = director;
         this.genre = genre;
+        this.trailer = trailer;
     }
 
     public Integer getId() {
@@ -102,11 +103,11 @@ public class Film {
 //        this.rating = rating;
 //    }
 //
-//    public URL getTrailer() {
-//        return trailer;
-//    }
-//
-//    public void setTrailer(URL trailer) {
-//        this.trailer = trailer;
-//    }
+    public String getTrailer() {
+        return trailer;
+    }
+
+    public void setTrailer(String trailer) {
+        this.trailer = trailer;
+    }
 }

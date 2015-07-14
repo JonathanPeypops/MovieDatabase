@@ -29,13 +29,19 @@
         <div class="form-group">
             <label for="title" class="col-sm-2 control-label">Genre</label>
             <div class="col-sm-10">
-                <sf:input path="genre" class="form-control"/>
+                <sf:select path="genre" items="${genres}" cssClass="form-control"/>
             </div>
         </div>
         <div class="form-group">
             <label for="title" class="col-sm-2 control-label">Length</label>
             <div class="col-sm-10">
                 <sf:input path="filmlength" class="form-control"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="title" class="col-sm-2 control-label">Trailer URL</label>
+            <div class="col-sm-10">
+                <sf:input path="trailer" class="form-control"/>
             </div>
         </div>
         <div class="form-group">

@@ -12,5 +12,6 @@
 </head>
 <body>
 <div>${film.title}</div>
+<iframe width="420" height="315" src="${film.trailer}" frameborder="0" allowfullscreen></iframe>
 </body>
 </html>

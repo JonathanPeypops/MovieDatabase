@@ -1,15 +1,15 @@
 package be.vdab.controller;
 
 import be.vdab.domain.Film;
+import be.vdab.domain.Genre;
 import be.vdab.repository.FilmRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 
 import static org.springframework.web.bind.annotation.RequestMethod.GET;
@@ -45,5 +45,14 @@ public class FilmController {
     public String removeById(@PathVariable("filmId") int id) {
         filmRepository.delete(id);
         return "redirect:/";
+    }
+
+    @ModelAttribute(value = "genres")
+    public List<Genre> genres(){
+        List<Genre> genres = new ArrayList<>();
+        for (Genre g: Genre.values()){
+            genres.add(g);
+        }
+        return genres;
     }
 }
