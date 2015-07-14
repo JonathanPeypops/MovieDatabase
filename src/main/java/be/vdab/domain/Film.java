@@ -10,6 +10,7 @@ public class Film {
     private Integer id;
     private String title;
     private int filmlength;
+//    @OneToMany
 //    private List<Character> characters;
     private String director;
 //    private String summary;

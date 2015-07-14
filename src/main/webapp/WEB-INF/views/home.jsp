@@ -9,30 +9,32 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
 <body>
-<h1>Movies</h1>
 
 <div class="container">
+    <h1>Movies</h1>
     <table class="table table-hover">
         <tr>
-            <th class="label label-success col-md-2">ID</th>
-            <th class="label label-primary col-md-4">Title</th>
-            <th class="label label-warning col-md-3">Director</th>
-            <th colspan="2" class="label label-danger col-md-3">Tools</th>
+            <%--<th class="label label-success col-md-2">ID</th>--%>
+            <th class="label label-primary col-md-5">Title</th>
+            <th class="label label-warning col-md-4">Director</th>
+            <th colspan="2" class="label label-info col-md-3">Tools</th>
         </tr>
 
         <c:forEach var="films" items="${films}">
 
             <tr>
-                <td class="col-md-3"> ${films.id} </td>
+                <%--<td class="col-md-1"> ${films.id} </td>--%>
                 <td class="col-md-4"><a href="films/details?id=${films.id}">${films.title}</a></td>
                 <td class="col-md-3"> ${films.director} </td>
-                <td><a class="btn btn-success" href="films/form?id=${films.id}">edit </a> </td>
-                <td><a class="btn btn-danger" href="film/delete/${films.id}">delete </a> </td>
+                <td><a class="btn btn-success" href="films/form?id=${films.id}">edit </a></td>
+                <td><a class="btn btn-danger" href="film/delete/${films.id}">delete </a></td>
             </tr>
 
         </c:forEach>
     </table>
-    <a href="films/form"><button class="btn btn-success">Add film</button></a>
+    <a href="films/form">
+        <button class="btn btn-success">Add film</button>
+    </a>
 </div>
 </body>
 </html>

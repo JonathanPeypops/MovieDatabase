@@ -14,11 +14,23 @@
 <div class="container">
     <sf:form commandName="film" action="/create" method="post">
         <sf:hidden path="id"/>
-        <div class="form-group">
-            <label for="title">Title</label>
-            <sf:input path="title" class="form-control"/>
+        <div class="form-control">
+            <label for="title" class="col-md-2">Title</label>
+            <sf:input path="title" class="col-md-10"/>
         </div>
-        <button type="submit" class="btn btn-danger">ADD</button>
+        <div class="row">
+            <label for="title" class="col-md-1 col-md-1-left">Director</label>
+            <sf:input path="director" class="col-md-10"/>
+        </div>
+        <div class="form-group">
+            <label for="title" class="col-md-2">Genre</label>
+            <sf:input path="genre" class="form-control col-md-10"/>
+        </div>
+        <div class="form-group">
+            <label for="title" class="col-md-2">Length</label>
+            <sf:input path="filmlength" class="form-group col-md-10"/>
+        </div>
+        <button type="submit" class="btn btn-danger">SAVE</button>
     </sf:form>
 </div>
 </body>
