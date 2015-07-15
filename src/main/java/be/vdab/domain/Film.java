@@ -1,6 +1,8 @@
 package be.vdab.domain;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 
 @Entity
@@ -10,8 +12,9 @@ public class Film {
     private Integer id;
     private String title;
     private int filmlength;
-//    @OneToMany
-//    private List<Character> characters;
+    @OneToMany
+    @JoinColumn(name = "film_id")
+    private List<Character> characters = new ArrayList<>();
     private String director;
 //    private String summary;
     private String coverimg;
@@ -56,13 +59,13 @@ public class Film {
         this.filmlength = filmlength;
     }
 
-//    public List<Character> getCharacters() {
-//        return characters;
-//    }
-//
-//    public void setCharacters(List<Character> characters) {
-//        this.characters = characters;
-//    }
+    public List<Character> getCharacters() {
+        return characters;
+    }
+
+    public void setCharacters(List<Character> characters) {
+        this.characters = characters;
+    }
 
     public String getDirector() {
         return director;

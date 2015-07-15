@@ -33,7 +33,7 @@
     <div class="form-group">
       <label for="gender" class="col-md-2 control-label">Gender</label>
       <div class="col-md-10">
-        <sf:select path="gender" items="${gender}" cssClass="form-control"/>
+        <sf:select path="gender" items="${genders}" cssClass="form-control"/>
       </div>
     </div>
     <div class="form-group">

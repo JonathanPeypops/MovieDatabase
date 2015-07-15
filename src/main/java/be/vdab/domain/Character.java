@@ -2,20 +2,17 @@ package be.vdab.domain;
 
 import javassist.bytecode.ByteArray;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-
-import javax.persistence.Entity;
+import javax.persistence.*;
 
 @Entity
+@Table(name = "film_character")
 public class Character {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String name;
-//    @ManyToOne
-//    private Actor actor;
+    @ManyToOne
+    private Actor actor;
 //    private ByteArray charimg;
 
     public Character() {
@@ -42,10 +39,10 @@ public class Character {
         this.name = name;
     }
 
-//    public Actor getActor() {
-//        return actor;
-//    }
-//
+    public Actor getActor() {
+        return actor;
+    }
+
 //    public void setActor(Actor actor) {
 //        this.actor = actor;
 //    }

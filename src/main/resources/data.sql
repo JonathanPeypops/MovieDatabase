@@ -4,3 +4,7 @@ INSERT INTO film(id, title, filmlength, director, genre) VALUES (3, 'The Purge',
 INSERT INTO actor (id, bio, firstname, gender, lastname) VALUES (1, 'He is just awesome', 'Tony', 'MALE', 'Stark');
 INSERT INTO actor (id, bio, firstname, gender, lastname) VALUES (2, 'nah', 'This', 'FEMALE', 'Girl');
 INSERT INTO actor (id, bio, firstname, gender, lastname) VALUES (3, 'You shall not pass', 'Gandalf', 'MALE', 'The Grey');
+INSERT INTO film_character (id, name, film_id, actor_id) VALUES (1, 'Iron Man', 2, 1);
+INSERT INTO film_character (id, name, film_id, actor_id) VALUES (2, 'Pepper', 2, 3);
+INSERT INTO film_character (id, name, film_id, actor_id) VALUES (3, 'Harry Potter', 1, 1);
+INSERT INTO film_character (id, name, film_id, actor_id) VALUES (4, 'Snape', 1, 2);
