@@ -35,6 +35,7 @@
     <a href="films/form">
         <button class="btn btn-success">Add film</button>
     </a>
+    <a href="/actor" class="btn btn-default">Actors</a>
 </div>
 </body>
 </html>

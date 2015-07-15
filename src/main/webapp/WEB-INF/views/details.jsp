@@ -11,7 +11,10 @@
     <title></title>
 </head>
 <body>
-<div>${film.title}</div>
+<h1><span>Title : </span>${film.title}</h1>
+<h2><span>Director : </span>${film.director}</h2>
+<h3><span>Length : </span> ${film.filmlength}</h3>
 <iframe width="420" height="315" src="${film.trailer}" frameborder="0" allowfullscreen></iframe>
+<img src="${film.coverimg}" class="img-thumbnail" height="360px"/>
 </body>
 </html>

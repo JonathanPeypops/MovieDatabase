@@ -14,7 +14,7 @@ public class Film {
 //    private List<Character> characters;
     private String director;
 //    private String summary;
-//    private ByteArray coverimg;
+    private String coverimg;
     @Enumerated(EnumType.STRING)
     private Genre genre;
 //    private double rating;
@@ -23,12 +23,13 @@ public class Film {
     public Film() {
     }
 
-    public Film(String title, int filmlength, String director, Genre genre, String trailer) {
+    public Film(String title, int filmlength, String director, Genre genre, String trailer, String coverimg) {
         this.title = title;
         this.filmlength = filmlength;
         this.director = director;
         this.genre = genre;
         this.trailer = trailer;
+        this.coverimg = coverimg;
     }
 
     public Integer getId() {
@@ -79,13 +80,13 @@ public class Film {
 //        this.summary = summary;
 //    }
 //
-//    public ByteArray getCoverimg() {
-//        return coverimg;
-//    }
-//
-//    public void setCoverimg(ByteArray coverimg) {
-//        this.coverimg = coverimg;
-//    }
+    public String getCoverimg() {
+        return coverimg;
+    }
+
+    public void setCoverimg(String coverimg) {
+        this.coverimg = coverimg;
+    }
 
     public Genre getGenre() {
         return genre;

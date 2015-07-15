@@ -15,37 +15,37 @@
     <sf:form commandName="film" action="/create" method="post" cssClass="form-horizontal">
         <sf:hidden path="id"/>
          <div class="form-group">
-            <label for="title" class="col-sm-2 control-label">Title</label>
-             <div class="col-sm-10">
+            <label for="title" class="col-md-2 control-label">Title</label>
+             <div class="col-md-10">
                 <sf:input path="title" class="form-control"/>
              </div>
         </div>
         <div class="form-group">
-            <label for="title" class="col-sm-2 control-label">Director</label>
-            <div class="col-sm-10">
+            <label for="title" class="col-md-2 control-label">Director</label>
+            <div class="col-md-10">
                 <sf:input path="director"  class="form-control"/>
             </div>
         </div>
         <div class="form-group">
-            <label for="title" class="col-sm-2 control-label">Genre</label>
-            <div class="col-sm-10">
+            <label for="title" class="col-md-2 control-label">Genre</label>
+            <div class="col-md-10">
                 <sf:select path="genre" items="${genres}" cssClass="form-control"/>
             </div>
         </div>
         <div class="form-group">
-            <label for="title" class="col-sm-2 control-label">Length</label>
-            <div class="col-sm-10">
+            <label for="title" class="col-md-2 control-label">Length</label>
+            <div class="col-md-10">
                 <sf:input path="filmlength" class="form-control"/>
             </div>
         </div>
         <div class="form-group">
-            <label for="title" class="col-sm-2 control-label">Trailer URL</label>
-            <div class="col-sm-10">
+            <label for="title" class="col-md-2 control-label">Trailer URL</label>
+            <div class="col-md-10">
                 <sf:input path="trailer" class="form-control"/>
             </div>
         </div>
         <div class="form-group">
-            <div class="col-sm-offset-2 col-sm-10">
+            <div class="col-md-offset-2 col-md-10">
                 <button type="submit" class="btn btn-danger">SAVE</button>
             </div>
         </div>
@@ -53,3 +53,24 @@
 </div>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
