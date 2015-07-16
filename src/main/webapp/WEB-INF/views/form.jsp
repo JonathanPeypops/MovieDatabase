@@ -31,13 +31,11 @@
         </div>
         <div class="form-group">
             <label for="title" class="col-md-2 control-label">Genre</label>
-            <div class="col-md-10">
+            <div class="col-md-4">
                 <sf:select path="genre" items="${genres}" cssClass="form-control"/>
             </div>
-        </div>
-        <div class="form-group">
             <label for="title" class="col-md-2 control-label">Length</label>
-            <div class="col-md-10">
+            <div class="col-md-4">
                 <sf:input path="filmlength" class="form-control"/>
             </div>
         </div>
