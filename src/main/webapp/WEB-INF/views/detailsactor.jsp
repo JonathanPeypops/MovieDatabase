@@ -21,6 +21,10 @@
 <body>
 <h1><span>Name : </span>${actor.firstname} ${actor.lastname}</h1>
 
+<h2>
+    <div>${actor.gender}</div>
+    <div>${actor.bio}</div>
+</h2>
 <div>
     <td><img src="${actor.actorimg}" class="img-thumbnail"/></td>
 </div>
