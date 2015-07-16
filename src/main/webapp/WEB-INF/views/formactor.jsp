@@ -12,10 +12,14 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <title></title>
+    <title>Actor</title>
+  <style>
+    body{background: url("http://wallpick-download.com/wp-content/uploads/2015/02/White-Background-40.png")}
+  </style>
 </head>
 <body>
 <div class="container">
+  <legend>Add/Edit Actor</legend>
   <sf:form commandName="actor" action="/createactor" method="post" cssClass="form-horizontal">
     <sf:hidden path="id"/>
     <div class="form-group">

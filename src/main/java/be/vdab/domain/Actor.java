@@ -17,12 +17,12 @@ public class Actor {
 //    private Date birthdate;
     @Enumerated(EnumType.STRING)
     private Gender gender;
-//    private ByteArray actorimg;
+    private String actorimg;
 
     public Actor() {
     }
 
-    public Actor(String firstname, String lastname, Gender gender) {
+    public Actor(String firstname, String lastname, Gender gender, String actorimg) {
         this.firstname = firstname;
         this.lastname = lastname;
         this.gender = gender;
@@ -76,11 +76,11 @@ public class Actor {
         this.gender = gender;
     }
 
-//    public ByteArray getActorimg() {
-//        return actorimg;
-//    }
-//
-//    public void setActorimg(ByteArray actorimg) {
-//        this.actorimg = actorimg;
-//    }
+    public String getActorimg() {
+        return actorimg;
+    }
+
+    public void setActorimg(String actorimg) {
+        this.actorimg = actorimg;
+    }
 }

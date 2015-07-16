@@ -9,6 +9,9 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
+  <style>
+    body{background: url("http://wallpick-download.com/wp-content/uploads/2015/02/White-Background-40.png")}
+  </style>
     <title>Actors</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
@@ -32,14 +35,14 @@
         <td class="col-md-4 text-center"><a href="actors/details?id=${actors.id}">${actors.firstname}</a></td>
         <td class="col-md-3"> ${actors.lastname} </td>
         <td class="col-md-2"> ${actors.gender} </td>
-        <td><a class="btn btn-success" href="actors/form?id=${actors.id}">edit </a></td>
-        <td><a class="btn btn-danger" href="actor/delete/${actors.id}">delete </a></td>
+        <td class="col-md-3"><a class="btn btn-success" href="actors/form?id=${actors.id}">edit </a></td>
       </tr>
 
     </c:forEach>
   </table>
   <a href="actors/form">
     <button class="btn btn-success">Add actor</button>
+    <a href="/" class="btn btn-default">Films</a>
   </a>
 </div>
 </body>
