@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: jeansmits
@@ -17,13 +18,20 @@
         }
     </style>
     <title>Actor details</title>
+<c:if test="${actor.id == 4}">
+    <script type="text/javascript">
+        function vid() {
+            window.open("https://www.youtube.com/watch?v=jX08IiuQoa0");
+        };
+    </script>
+</c:if>
 </head>
 <body>
 <h1><span>Name : </span>${actor.firstname} ${actor.lastname}</h1>
 
 <h2>
     <div>${actor.gender}</div>
-    <div>${actor.bio}</div>
+    <div onclick="vid()">${actor.bio}</div>
 </h2>
 <div>
     <td><img src="${actor.actorimg}" class="img-thumbnail"/></td>
